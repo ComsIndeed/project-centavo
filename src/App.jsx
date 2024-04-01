@@ -1,7 +1,11 @@
+import LandingStage from "./Stages/LandingStage";
+
 function App() {
   return (
     <>
-      <h1>Hello worldd</h1>
+      <div className="StageView">
+        <LandingStage />
+      </div>
     </>
   );
 }
