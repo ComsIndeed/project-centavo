@@ -10,8 +10,8 @@ body {
 
 .Envelope {
   position: relative;
-  scale: 1;
-  transition: scale 0.5s ease-in-out;
+  scale: 1.25;
+  transition: scale 0.5s ease-in-out, translate 1s;
 }
 .Envelope .Back {
   z-index: 0;
@@ -31,26 +31,50 @@ body {
 }
 .Envelope .Inside {
   z-index: 1;
-  width: 100%;
+  width: 150%;
   bottom: 25%;
-  left: 0%;
+  left: -25%;
   position: absolute;
-  transition: bottom 1s ease, scale 1s ease;
-  scale: 0.8;
-  outline: 2px solid red;
+  transition: bottom 1s, scale 1s, transform 1s;
+  scale: 0.2;
+  transform: scaleY(0);
+  transform-origin: bottom;
 }
 .Envelope.open {
-  scale: 1.2;
+  translate: 0 8vw;
+  scale: 1.5;
 }
 .Envelope.open .Lid {
   z-index: 0;
 }
 .Envelope.open .Inside {
+  transform: scaleY(1);
   scale: 1;
-  bottom: 150%;
+  bottom: 125%;
 }
 
 .Paper {
   background-color: white;
   color: black;
+  padding: 0.5em;
+  cursor: pointer;
+  scale: 1;
+  transition: scale 0.25s;
+}
+.Paper:hover {
+  scale: 0.975;
+}
+
+.LandingStage {
+  position: relative;
+  opacity: 1;
+  transition: opacity 1s;
+}
+.LandingStage::after {
+  content: "";
+  background: radial-gradient(circle, rgba(255, 202, 254, 0.6727065826) 0%, rgba(255, 0, 224, 0) 100%);
+  position: absolute;
+}
+.LandingStage.hide {
+  opacity: 0;
 }/*# sourceMappingURL=index.css.map */

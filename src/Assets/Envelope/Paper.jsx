@@ -1,7 +1,9 @@
-export default function Paper({ children }) {
+export default function Paper({ children, onClick }) {
   return (
     <>
-      <div className="Paper">{children}</div>
+      <div className="Paper" onClick={onClick}>
+        {children}
+      </div>
     </>
   );
 }

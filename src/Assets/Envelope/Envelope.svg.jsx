@@ -9,7 +9,7 @@ function Back() {
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
       >
-        <g clip-path="url(#clip0_12_14)">
+        <g clipPath="url(#clip0_12_14)">
           <g filter="url(#filter0_d_12_14)">
             <path
               d="M75 28L-1.78814e-07 -4.17233e-07L150 -4.17233e-07L75 28Z"
@@ -25,9 +25,9 @@ function Back() {
             width="150"
             height="28.25"
             filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feColorMatrix
               in="SourceAlpha"
               type="matrix"
@@ -71,11 +71,11 @@ function Body() {
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
       >
-        <g clip-path="url(#clip0_12_2)">
+        <g clipPath="url(#clip0_12_2)">
           <g filter="url(#filter0_d_12_2)">
             <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
+              fillRule="evenodd"
+              clipRule="evenodd"
               d="M150 80V0L75 28L0 0V80C0 82.7614 2.23858 85 5 85H145C147.761 85 150 82.7614 150 80Z"
               fill="#FCDDF7"
             />
@@ -91,7 +91,7 @@ function Body() {
           <path
             d="M8 37V76M8 24V33M129.728 66.528C129.909 66.4853 130.091 66.496 130.272 66.56C130.464 66.624 130.64 66.7307 130.8 66.88C130.875 66.9547 130.928 67.0453 130.96 67.152C131.003 67.2587 131.024 67.3707 131.024 67.488C131.024 67.616 131.003 67.7547 130.96 67.904C130.928 68.0427 130.88 68.1493 130.816 68.224C130.731 68.32 130.619 68.3947 130.48 68.448C130.341 68.5013 130.208 68.5387 130.08 68.56C129.952 68.5707 129.84 68.576 129.744 68.576C129.659 68.576 129.611 68.576 129.6 68.576L126.464 68.592C126.336 68.6027 126.203 68.6133 126.064 68.624C125.936 68.624 125.808 68.6187 125.68 68.608C125.552 68.5867 125.429 68.5547 125.312 68.512C125.205 68.4587 125.104 68.3893 125.008 68.304C124.891 68.1867 124.8 68.0747 124.736 67.968C124.672 67.8507 124.64 67.7173 124.64 67.568C124.64 67.3867 124.688 67.2107 124.784 67.04C124.891 66.8587 125.035 66.736 125.216 66.672C125.44 66.576 125.669 66.5333 125.904 66.544C126.149 66.544 126.395 66.5387 126.64 66.528H129.728ZM141.674 63.44C141.727 63.6853 141.733 63.936 141.69 64.192C141.658 64.4373 141.61 64.6613 141.546 64.864C141.418 65.28 141.269 65.744 141.098 66.256C140.927 66.768 140.757 67.28 140.586 67.792C140.415 68.304 140.25 68.7893 140.09 69.248C139.93 69.696 139.797 70.0693 139.69 70.368C139.583 70.6453 139.471 70.96 139.354 71.312C139.237 71.664 139.093 72.0107 138.922 72.352C138.762 72.6827 138.57 72.9867 138.346 73.264C138.133 73.5413 137.871 73.744 137.562 73.872C137.253 74 136.97 74.032 136.714 73.968C136.458 73.8933 136.229 73.7653 136.026 73.584C135.823 73.392 135.637 73.1573 135.466 72.88C135.306 72.592 135.162 72.2987 135.034 72C134.906 71.7013 134.789 71.4133 134.682 71.136C134.575 70.848 134.479 70.6027 134.394 70.4C134.063 69.6747 133.765 68.9067 133.498 68.096C133.231 67.2853 132.959 66.512 132.682 65.776C132.607 65.5627 132.522 65.3067 132.426 65.008C132.33 64.6987 132.266 64.3947 132.234 64.096C132.213 63.7867 132.25 63.5093 132.346 63.264C132.442 63.008 132.645 62.832 132.954 62.736C133.018 62.7147 133.082 62.6987 133.146 62.688C133.221 62.6667 133.29 62.6507 133.354 62.64C133.429 62.64 133.498 62.6453 133.562 62.656C133.626 62.6667 133.695 62.6933 133.77 62.736C133.823 62.7573 133.877 62.784 133.93 62.816C133.983 62.8373 134.031 62.8693 134.074 62.912C134.117 62.9653 134.154 63.0187 134.186 63.072C134.229 63.1253 134.271 63.1787 134.314 63.232C134.346 63.3067 134.373 63.376 134.394 63.44C134.426 63.4933 134.453 63.5467 134.474 63.6C134.495 63.6747 134.522 63.744 134.554 63.808C134.586 63.8613 134.613 63.9147 134.634 63.968L134.73 64.24L137.034 70.816L139.306 64.256L139.418 63.984C139.439 63.9307 139.461 63.8773 139.482 63.824C139.503 63.76 139.525 63.6907 139.546 63.616C139.567 63.5627 139.589 63.5093 139.61 63.456C139.642 63.392 139.679 63.328 139.722 63.264C139.754 63.2107 139.786 63.1573 139.818 63.104C139.861 63.04 139.903 62.9813 139.946 62.928C139.978 62.8853 140.015 62.848 140.058 62.816C140.111 62.784 140.159 62.7573 140.202 62.736C140.287 62.6933 140.362 62.6667 140.426 62.656C140.501 62.6453 140.565 62.64 140.618 62.64C140.682 62.6507 140.746 62.6667 140.81 62.688C140.885 62.6987 140.954 62.7147 141.018 62.736C141.221 62.7893 141.37 62.88 141.466 63.008C141.573 63.136 141.642 63.28 141.674 63.44Z"
             stroke="#D9BBD4"
-            stroke-linecap="round"
+            strokeLinecap="round"
           />
         </g>
         <defs>
@@ -102,9 +102,9 @@ function Body() {
             width="158"
             height="93"
             filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feColorMatrix
               in="SourceAlpha"
               type="matrix"
@@ -149,7 +149,7 @@ function Lid({ isOpen }) {
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
       >
-        <g clip-path="url(#clip0_12_9)">
+        <g clipPath="url(#clip0_12_9)">
           <g filter="url(#filter0_d_12_9)">
             <path d="M75 53L-1.78814e-07 0L150 0L75 53Z" fill="#FCEFFA" />
           </g>
@@ -168,9 +168,9 @@ function Lid({ isOpen }) {
             width="150"
             height="53.25"
             filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feColorMatrix
               in="SourceAlpha"
               type="matrix"
@@ -202,9 +202,9 @@ function Lid({ isOpen }) {
             width="26.3661"
             height="24.7724"
             filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feColorMatrix
               in="SourceAlpha"
               type="matrix"
@@ -243,7 +243,13 @@ export default function EnvelopeSVG({ children, isOpen }) {
   return (
     <>
       <Back />
-      <div className="Inside">{children}</div>
+      <div
+        className={`Inside animate__animated ${
+          isOpen ? "" : "animate__delay-3s animated__tada"
+        }`}
+      >
+        {children}
+      </div>
       <Body />
       <Lid isOpen={isOpen} />
     </>
