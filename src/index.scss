@@ -6,6 +6,11 @@ body {
   align-items: center;
   justify-content: center;
   height: 95dvh;
+
+  &:has(.Stage1) {
+    overflow-x: hidden;
+    background-color: cyan;
+  }
 }
 
 .Envelope {
@@ -61,6 +66,7 @@ body {
   cursor: pointer;
   scale: 1;
   transition: scale 0.25s;
+  box-shadow: 4px 3px 5px 0px rgba(0, 0, 0, 0.75);
   &:hover {
     scale: 0.975;
   }
@@ -81,5 +87,17 @@ body {
   }
   &.hide {
     opacity: 0;
+  }
+}
+
+.Stage1 {
+  width: 95dvw;
+  height: 95dvh;
+  .backgrounds {
+    position: relative;
+    width: 100%;
+    * {
+      position: absolute;
+    }
   }
 }

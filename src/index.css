@@ -7,6 +7,10 @@ body {
   justify-content: center;
   height: 95dvh;
 }
+body:has(.Stage1) {
+  overflow-x: hidden;
+  background-color: cyan;
+}
 
 .Envelope {
   position: relative;
@@ -60,6 +64,7 @@ body {
   cursor: pointer;
   scale: 1;
   transition: scale 0.25s;
+  box-shadow: 4px 3px 5px 0px rgba(0, 0, 0, 0.75);
 }
 .Paper:hover {
   scale: 0.975;
@@ -77,4 +82,16 @@ body {
 }
 .LandingStage.hide {
   opacity: 0;
+}
+
+.Stage1 {
+  width: 95dvw;
+  height: 95dvh;
+}
+.Stage1 .backgrounds {
+  position: relative;
+  width: 100%;
+}
+.Stage1 .backgrounds * {
+  position: absolute;
 }/*# sourceMappingURL=index.css.map */
