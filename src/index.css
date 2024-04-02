@@ -9,5 +9,48 @@ body {
 }
 
 .Envelope {
-  outline: 4px solid red;
+  position: relative;
+  scale: 1;
+  transition: scale 0.5s ease-in-out;
+}
+.Envelope .Back {
+  z-index: 0;
+}
+.Envelope .Body,
+.Envelope .Lid {
+  z-index: 2;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  transform: scaleY(1);
+  transform-origin: top;
+  transition: transform 0.25s ease-in-out;
+}
+.Envelope .Lid.open {
+  transform: scaleY(-1);
+}
+.Envelope .Inside {
+  z-index: 1;
+  width: 100%;
+  bottom: 25%;
+  left: 0%;
+  position: absolute;
+  transition: bottom 1s ease, scale 1s ease;
+  scale: 0.8;
+  outline: 2px solid red;
+}
+.Envelope.open {
+  scale: 1.2;
+}
+.Envelope.open .Lid {
+  z-index: 0;
+}
+.Envelope.open .Inside {
+  scale: 1;
+  bottom: 150%;
+}
+
+.Paper {
+  background-color: white;
+  color: black;
 }/*# sourceMappingURL=index.css.map */
