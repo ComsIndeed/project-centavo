@@ -6,16 +6,20 @@ body {
   align-items: center;
   justify-content: center;
   height: 95dvh;
+  transition: background-color 1s;
+}
+body:has(.LandingStage.open) {
+  background-color: rgb(65, 124, 150);
 }
 body:has(.Stage1) {
-  overflow-x: hidden;
-  background-color: cyan;
+  overflow: hidden;
 }
 
 .Envelope {
   position: relative;
   scale: 1.25;
   transition: scale 0.5s ease-in-out, translate 1s;
+  box-shadow: 0.05em 0.06em 0.5em 0em rgba(0, 0, 0, 0.5);
 }
 .Envelope .Back {
   z-index: 0;
@@ -64,7 +68,7 @@ body:has(.Stage1) {
   cursor: pointer;
   scale: 1;
   transition: scale 0.25s;
-  box-shadow: 4px 3px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0.05em 0.06em 0.5em 0em rgba(0, 0, 0, 0.5);
 }
 .Paper:hover {
   scale: 0.975;
@@ -85,13 +89,17 @@ body:has(.Stage1) {
 }
 
 .Stage1 {
-  width: 95dvw;
-  height: 95dvh;
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh;
 }
-.Stage1 .backgrounds {
-  position: relative;
-  width: 100%;
-}
-.Stage1 .backgrounds * {
-  position: absolute;
+.Stage1 .Page {
+  scroll-snap-align: center;
+  padding: 1em;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }/*# sourceMappingURL=index.css.map */

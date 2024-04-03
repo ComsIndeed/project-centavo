@@ -10,13 +10,23 @@ export default function Stage1() {
   return (
     <>
       <div className="Stage1 animate__animated animate__fadeIn">
-        <h1>Stage 1</h1>
-        <div className="backgrounds">
-          {/* <img src={Sun} />
-          <img src={Mountains} />
-          <img src={Trees3} />
-          <img src={Trees2} /> */}
-          <img src={Trees1} />
+        <div className="Page" id="Page1">
+          <h1>This page has content</h1>
+        </div>
+        <div className="Page" id="Page2">
+          <h1>This page has content</h1>
+        </div>
+        <div className="Page" id="Page3">
+          <h1>This page has content</h1>
+        </div>
+        <div className="Page" id="Page4">
+          <h1>This page has content</h1>
+        </div>
+        <div className="Page" id="Page5">
+          <h1>This page has content</h1>
+        </div>
+        <div className="Page" id="Page6">
+          <h1>This page has content</h1>
         </div>
       </div>
     </>
