@@ -143,6 +143,12 @@ body:has(.Stage1) {
   background-image: url("./Assets/Backgrounds/paper.png");
   background-size: cover;
   max-width: 70vw;
+  font-size: 2em;
+}
+@media (max-width: 768px) {
+  .Stage1 .Page > .paperTexture {
+    font-size: 1em;
+  }
 }
 .Stage1 .Page#Page1 {
   background-color: rgb(195, 255, 255);

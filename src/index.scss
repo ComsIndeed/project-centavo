@@ -169,6 +169,10 @@ body {
       background-image: url("./Assets/Backgrounds/paper.png");
       background-size: cover;
       max-width: 70vw;
+      font-size: 2em;
+      @include forScreens($p) {
+        font-size: 1em;
+      }
     }
     &#Page1 {
       background-color: rgb(195, 255, 255);
