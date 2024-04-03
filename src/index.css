@@ -1,3 +1,7 @@
+@font-face {
+  font-family: "Merienda";
+  src: url("./Assets/Fonts/Merienda-VariableFont_wght.ttf");
+}
 body {
   background-color: #000000;
   color: white;
@@ -7,6 +11,9 @@ body {
   justify-content: center;
   height: 95dvh;
   transition: background-color 1s;
+}
+body * {
+  font-family: "Merienda", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 body:has(.LandingStage.open) {
   background-color: rgb(65, 124, 150);
@@ -107,7 +114,7 @@ body:has(.Stage1) {
 }
 .Stage1 .Page .Backgrounds {
   position: absolute;
-  top: 0%;
+  top: calc(0% + 2em);
   left: 0%;
   width: 100%;
   height: 100vh;
@@ -119,10 +126,30 @@ body:has(.Stage1) {
   left: 0%;
   width: 100%;
 }
+@media (max-width: 768px) {
+  .Stage1 .Page .Backgrounds * {
+    width: 200%;
+    left: -50%;
+  }
+}
 .Stage1 .Page > *:not(.Backgrounds) {
   z-index: 10;
+  font-size: 2em;
+  background-image: url("./Assets/Backgrounds/paper.png");
+  background-size: cover;
+  color: rgb(0, 0, 0);
+  padding: 2em;
+  box-shadow: 0.3em 0.15em 0.4em 0em rgba(0, 0, 0, 0.5);
 }
 .Stage1 .Page#Page1 {
-  background-color: cyan;
-  outline: 4px solid red;
+  background-color: rgb(195, 255, 255);
+}
+.Stage1 .Page#FormPage button {
+  padding: 1em 3em;
+  margin: 2em;
+  font-size: 1.5em;
+}
+.Stage1 .Page#FormPage textarea {
+  width: 90vw;
+  height: 20vh;
 }/*# sourceMappingURL=index.css.map */
