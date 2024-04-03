@@ -27,8 +27,12 @@ export default function LandingStage() {
           isOpen={isOpen}
         >
           <Paper onClick={handleNextPage}>
-            Hi person, welcome to my site <br /> <br />I just made this to ask
-            you something
+            Hi Cailsey, welcome sa ginawa kong site hahaha
+            <br />
+            <br />I made this just to tell you some things and ask you something
+            at the end. 😊
+            <br />
+            (Pakiclick nalang to proceed )
           </Paper>
         </Envelope>
       </div>
