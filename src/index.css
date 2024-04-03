@@ -132,24 +132,64 @@ body:has(.Stage1) {
     left: -50%;
   }
 }
-.Stage1 .Page > *:not(.Backgrounds) {
+.Stage1 .Page > *:not(.Backgrounds, .Exclude) {
   z-index: 10;
   font-size: 2em;
-  background-image: url("./Assets/Backgrounds/paper.png");
-  background-size: cover;
   color: rgb(0, 0, 0);
   padding: 2em;
   box-shadow: 0.3em 0.15em 0.4em 0em rgba(0, 0, 0, 0.5);
 }
+.Stage1 .Page > .paperTexture {
+  background-image: url("./Assets/Backgrounds/paper.png");
+  background-size: cover;
+  max-width: 70vw;
+}
 .Stage1 .Page#Page1 {
   background-color: rgb(195, 255, 255);
 }
+.Stage1 .Page#FormPage h3 {
+  font-size: 3em;
+}
+.Stage1 .Page#FormPage p {
+  font-size: 1em;
+}
+.Stage1 .Page#FormPage * {
+  color: white;
+}
 .Stage1 .Page#FormPage button {
-  padding: 1em 3em;
-  margin: 2em;
+  color: white;
+  border-radius: 0.25em;
+  padding: 0.25em 0.5em;
+  margin: 0em 1em;
   font-size: 1.5em;
+  background: none;
+  border: none;
+  transition: background-color 1s;
+}
+.Stage1 .Page#FormPage button.selected {
+  background-color: rgba(255, 255, 255, 0.6);
 }
 .Stage1 .Page#FormPage textarea {
   width: 90vw;
   height: 20vh;
+  background: none;
+  color: white;
+}
+@media (max-width: 768px) {
+  .Stage1 .Page#FormPage h3 {
+    font-size: 2em;
+  }
+  .Stage1 .Page#FormPage button {
+    color: white;
+    border-radius: 0.25em;
+    padding: 0.5em 1em;
+    margin: 0em 0.25em;
+    font-size: 1em;
+  }
+  .Stage1 .Page#FormPage textarea {
+    width: 90vw;
+    height: 20vh;
+    background: none;
+    color: white;
+  }
 }/*# sourceMappingURL=index.css.map */

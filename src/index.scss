@@ -158,14 +158,17 @@ body {
         }
       }
     }
-    & > *:not(.Backgrounds) {
+    & > *:not(.Backgrounds, .Exclude) {
       z-index: 10;
       font-size: 2em;
-      background-image: url("./Assets/Backgrounds/paper.png");
-      background-size: cover;
       color: rgb(0, 0, 0);
       padding: 2em;
       box-shadow: 0.3em 0.15em 0.4em 0em rgba(0, 0, 0, 0.5);
+    }
+    & > .paperTexture {
+      background-image: url("./Assets/Backgrounds/paper.png");
+      background-size: cover;
+      max-width: 70vw;
     }
     &#Page1 {
       background-color: rgb(195, 255, 255);
@@ -181,14 +184,51 @@ body {
     &#Page6 {
     }
     &#FormPage {
+      h3 {
+        font-size: 3em;
+      }
+      p {
+        font-size: 1em;
+      }
+      * {
+        color: white;
+      }
       button {
-        padding: 1em 3em;
-        margin: 2em;
+        color: white;
+        border-radius: 0.25em;
+        padding: 0.25em 0.5em;
+        margin: 0em 1em;
         font-size: 1.5em;
+        background: none;
+        border: none;
+        transition: background-color 1s;
+        &.selected {
+          background-color: rgba(255, 255, 255, 0.6);
+        }
       }
       textarea {
         width: 90vw;
         height: 20vh;
+        background: none;
+        color: white;
+      }
+      @include forScreens($p) {
+        h3 {
+          font-size: 2em;
+        }
+        button {
+          color: white;
+          border-radius: 0.25em;
+          padding: 0.5em 1em;
+          margin: 0em 0.25em;
+          font-size: 1em;
+        }
+        textarea {
+          width: 90vw;
+          height: 20vh;
+          background: none;
+          color: white;
+        }
       }
     }
   }
