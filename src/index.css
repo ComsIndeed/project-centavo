@@ -153,6 +153,15 @@ body:has(.Stage1) {
 .Stage1 .Page#Page1 {
   background-color: rgb(195, 255, 255);
 }
+.Stage1 .Page#Page2 {
+  background-color: rgb(255, 255, 197);
+}
+.Stage1 .Page#Page3 {
+  background-color: rgb(255, 223, 228);
+}
+.Stage1 .Page#Page4 {
+  background-color: rgb(207, 255, 207);
+}
 .Stage1 .Page#FormPage h3 {
   font-size: 3em;
 }
